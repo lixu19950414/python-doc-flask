@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lee's Blog</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/FrontPage.css">
+	</head>
+
+	<body background="res/background.jpg">
+		<div class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<a href="##" class="navbar-brand">Lee's Blog</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">FrontPage</a></li>
+				<li><a href="Favorites.html">Favorites</a></li>
+				<li><a href="Articles.html">Articles</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+				<li><a href="About.html">About</a></li>
+			</ul>
+		</div>
+
+		<br/><br/>
+		<!-- LOGO -->
+		<p class="logo">
+			<img src="res/FrontPage/logo.png" alt="logo">
+		</p>
+
+		<br/>
+		<!-- 搜索框 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+					<form role="form">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<select class="form-control" id="selected_engine"> 
+										<option>Baidu</option>
+										<option>Google</option>
+									</select>
+								</div>
+								<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+									<input class="form-control" type="text" id="search_info" name="wd">
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<button class="btn btn-success" type="button" onClick="onSearch()">Search</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<br/><br/><br/>
+		<!-- 链接面板 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<!-- 第一行 -->
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<p>视频</p>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.iqiyi.com">爱奇艺</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.letv.com">乐视视频</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://tv.sohu.com">搜狐视频</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.tudou.com">土豆视频</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.pptv.com">PPTV</a>
+								</div>
+							</div>
+							<!-- 第二行 -->
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<p>新闻</p>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://news.qq.com">腾讯新闻</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://news.sohu.com">搜狐新闻</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://news.163.com">网易新闻</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://news.sina.com.cn">新浪新闻</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://news.ifeng.com">凤凰资讯</a>
+								</div>
+							</div>
+							<!-- 第三行 -->
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<p>购物</p>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="https://www.taobao.com">淘宝</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="https://www.tmall.com/">天猫</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="https://www.jd.com">京东</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.yhd.com/">一号店</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.amazon.cn/">amazon</a>
+								</div>
+							</div>
+							<!-- 第四行 -->
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<p>学习</p>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.imooc.com">慕课网</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.coursera.org">Coursera</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://blog.jobbole.com">伯乐在线</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://github.com">GitHub</a>
+								</div>
+							</div>
+							<!-- 第五行 -->
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<p>其他</p>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.bilibili.com">bilibili</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.acfun.tv">AcFun</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://www.nankai.edu.cn">南开大学</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://222.30.32.10">选课系统</a>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://urp.nankai.edu.cn">urp系统</a>
+								</div>
+							</div>
+							<!-- 第六行 -->
+							<div class="row">
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<p>IPV6</p>
+								</div>
+								<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+									<a href="http://bt.neu6.edu.cn/">六维</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 加载js -->
+		<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/FrontPage.js"></script>
+		<script src="js/snow.js"></script>
+		<script src="js/startsnow.js"></script>
+	</body>
+</html>
