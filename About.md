@@ -14,3 +14,10 @@
 里面有蜜汁JS特效呢（丑
 
 
+顺便这个网站的源码放到了Github上面托管
+
+url:[https://github.com/lixu19950414/weblog](https://github.com/lixu19950414/weblog)
+
+下载方法:
+
+$ git clone https://github.com/lixu19950414/weblog
