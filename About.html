@@ -38,7 +38,7 @@
 	</head>
  
 	<body background="res/background.jpg">
-		<div class="navbar navbar-default" role="navigation">
+		<div class="navbar navbar-default" role="navigation" id="navbar">
 			<div class="navbar-header">
 				<a href="##" class="navbar-brand">Lee's Blog</a>
 			</div>
@@ -65,6 +65,7 @@
 
 		<script type="text/javascript">
 			doAjaxCall('About.md');
+			document.getElementById("navbar").style.display="none";
 		</script>
 	</body>
 
