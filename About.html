@@ -19,6 +19,7 @@
 				}
 				if(request){
 					request.open("GET",the_request,true);
+					request.send(null);
 					request.onreadystatechange = function(){
 						if(request.readyState===4){
 							if (request.status == 200 || request.status == 0){
@@ -29,7 +30,6 @@
 							}
 						}
 					}
-					request.send(null);
 				} else{
 					alert("error");
 				}
